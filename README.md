@@ -47,3 +47,73 @@ Built with **Next.js 14**, it integrates **Google Gemini AI** for assisting with
 
 ---
 
+/app
+/api → Server API routes
+/components → UI components
+/styles → Global styles
+/lib → Config & helper functions
+/prisma → Prisma schema & migrations
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚡ Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/safe-report.git
+cd safe-report
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Configure Environment Variables
+Create a .env.local file:
+
+env
+Copy
+Edit
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DBNAME
+NEXTAUTH_SECRET=your_secret
+NEXTAUTH_URL=http://localhost:3000
+GEMINI_API_KEY=your_gemini_api_key
+4️⃣ Run the Development Server
+bash
+Copy
+Edit
+npm run dev
+Visit: http://localhost:3000
+
+🔒 Security Notes
+All AI calls to Gemini are server-side to avoid exposing API keys.
+
+No IP addresses or identifying metadata are stored for reporters.
+
+Inputs are sanitized before saving to the database.
+
+Admin access is protected with NextAuth.
+
+📌 Roadmap
+ File upload for evidence
+
+ Email alerts for admins
+
+ Multi-language support
+
+ Rate limiting & spam prevention
+
+📜 License
+MIT License © 2025 Your Name
+
+yaml
+Copy
+Edit
+
+---
+
+If you want, I can also add a **system architecture diagram** and a **database schema diagram** inside the README so it’s visually appealing and developer-friendly. That 
+
