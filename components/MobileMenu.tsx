@@ -76,6 +76,17 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             >
               Contact
             </Link>
+
+            {/* 🔴 Admin button */}
+            <Link
+              href="/auth/signup"
+              className="rounded-full bg-red-500/10 px-4 py-2 text-sm font-medium text-red-400 
+                         ring-1 ring-inset ring-red-500/20 transition-all 
+                         hover:bg-red-500/20 hover:text-red-300 text-center"
+              onClick={onClose}
+            >
+              Admin
+            </Link>
           </nav>
         </div>
       </div>
